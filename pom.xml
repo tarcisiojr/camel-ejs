@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>camel-ejs</name>
-	<url>http://maven.apache.org</url>
+	<url>https://github.com/tarcisiojr/camel-ejs</url>
 
 	<properties>
         <camel.osgi.export.pkg>br.com.softbox.camel.component.ejs.*</camel.osgi.export.pkg>
@@ -19,6 +19,13 @@
     	<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 	
+	<distributionManagement>
+		<repository>
+			<id>Softbox</id>
+			<name>Softbox Repository</name>
+			<url>https://artifactory.softbox.com.br:8087/artifactory/libs-release-local</url>
+		</repository>
+	</distributionManagement>
 	
 
 	<dependencies>
@@ -27,23 +34,7 @@
             <artifactId>camel-core</artifactId>
             <version>2.21.0</version>
         </dependency>
-		<dependency>
-			<groupId>org.apache.camel.archetypes</groupId>
-			  <artifactId>camel-archetype-component</artifactId>
-			  <version>2.21.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-core</artifactId>
-			<version>2.9.6</version>
-		</dependency>
 
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.9.6</version>
-		</dependency>
-		
 		<dependency>
             <groupId>org.apache.camel</groupId>
             <artifactId>camel-test-spring</artifactId>
